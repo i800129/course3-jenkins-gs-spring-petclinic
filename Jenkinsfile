@@ -4,14 +4,6 @@ pipeline {
     agent any
     
     stages {
-        stage ("checkout") {
-            steps {
-                sh "pwd"
-                sh "ls"
-                git branch:'main', url: 'https://github.com/i800129/course3-jenkins-gs-spring-petclinic'
-                sh "ls"
-            }
-        }
         
         stage("build") {
             steps {
